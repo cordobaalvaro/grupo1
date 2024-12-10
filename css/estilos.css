@@ -1,0 +1,25 @@
+/* main */
+.main h1 {
+  text-align: center;
+  margin: 10px 0px;
+}
+/* formulario */
+.sin-resize {
+  resize: none;
+}
+
+.color {
+  background-color: lightgray;
+}
+
+.espacio-mg {
+  margin: 100px;
+  height: 100vh;
+}
+
+.espacio-pg {
+  padding: 50px 100px;
+}
+.efecto-casilla {
+  filter: drop-shadow(16px 16px 16px rgb(110, 110, 110));
+}

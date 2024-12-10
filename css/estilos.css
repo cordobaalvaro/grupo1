@@ -11,15 +11,28 @@
 .color {
   background-color: lightgray;
 }
+.color-casilla {
+  background-color: white;
+}
 
-.espacio-mg {
-  margin: 100px;
+.toda-la-pantalla {
   height: 100vh;
 }
 
+.espacio-mg {
+  margin: 50px 30px;
+}
 .espacio-pg {
   padding: 50px 100px;
 }
 .efecto-casilla {
   filter: drop-shadow(16px 16px 16px rgb(110, 110, 110));
+}
+
+.color-ventana {
+  background-color: rgb(253, 193, 7);
+}
+
+.espacio-ventana {
+  padding-top: 50px;
 }

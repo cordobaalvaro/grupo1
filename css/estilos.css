@@ -1,0 +1,10 @@
+.bg {
+  background-image: url(../img/moneda\ bg.jpeg);
+  background-position: center center;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+body {
+  background-color: lightgrey;
+}

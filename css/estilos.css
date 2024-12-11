@@ -8,7 +8,7 @@
   resize: none;
 }
 
-.color {
+.color-fondo {
   background-color: lightgray;
 }
 .color-casilla {
@@ -22,9 +22,6 @@
 .espacio-mg {
   margin: 50px 30px;
 }
-.espacio-pg {
-  padding: 50px 100px;
-}
 .efecto-casilla {
   filter: drop-shadow(16px 16px 16px rgb(110, 110, 110));
 }
@@ -35,4 +32,13 @@
 
 .espacio-ventana {
   padding-top: 50px;
+}
+
+/* iconos */
+.color-iconos {
+  color: white;
+}
+
+.espacio-iconos {
+  margin-top: 300px;
 }

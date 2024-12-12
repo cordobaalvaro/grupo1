@@ -53,3 +53,7 @@ body {
     display: none;
   }
 }
+/* CSS de Grecia */
+.tamanio-moneda {
+  width: 25rem;
+}

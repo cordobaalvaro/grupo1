@@ -44,7 +44,7 @@ body {
 }
 
 .taminio-cards {
-  width: 18rem;
+  width: 14rem;
   margin: 10px;
 }
 
@@ -56,4 +56,21 @@ body {
 /* CSS de Grecia */
 .tamanio-moneda {
   width: 25rem;
+}
+.imagen-logo img {
+  width: 100px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.campana {
+  font-size: 25px;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }

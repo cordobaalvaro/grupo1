@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iniciar Sesion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+   <header>
+      <nav class="navbar navbar-expand-lg bg-secondary header-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand imagen-logo my-4" href="../index.html">
+            <img src="../img/logo cortado.webp" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+              <li class="nav-item">
+                <a
+                  class="nav-link my-5 bg-warning text-black fw-bold"
+                  href="../paginas/sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-3 my-5 bg-warning text-black fw-bold"
+                  href="../paginas/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link my-5 bg-warning text-black fw-bold"
+                  href="../paginas/iniciar-sesion.html"
+                  >Iniciar Sesión</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-3 my-5 bg-danger fw-bold"
+                  href="../paginas/suscribete.html"
+                  >Suscribete</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container w-75 bg-secondary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+          <div class="col bg-white p-5 rounded-end">
+            <div class="text-end">
+              <img
+                src="../img/WhatsApp Image 2024-12-05 at 00.26.13_preview_rev_1.png"
+                alt=""
+                width="48"
+              />
+            </div>
+
+            <h2 class="fw-bold text-center pt-5 mb-5">Bienvenido</h2>
+
+            <!-- LOGIN -->
+            <form action="#">
+              <div class="mb-4">
+                <label for="email" class="form-label">Correo electronico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Ingresa tu correo"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  placeholder="Ingresa tu contraseña"
+                />
+              </div>
+              <div class="mb-4 form-check">
+                <input
+                  type="checkbox"
+                  name="connected"
+                  class="form-check-input"
+                />
+                <label for="connected" class="form-check-label"
+                  >Mantenerme conectado</label
+                >
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-warning">
+                  Iniciar Sesión
+                </button>
+              </div>
+              <div class="my-3">
+                <span> ¿No tienes cuenta? <a href="">Registrate</a> </span>
+                <br />
+                <span>
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#recuperarModal"
+                    >Recuperar contraseña</a
+                  ></span
+                >
+              </div>
+            </form>
+            <!-- VENTANA MODAL -->
+            <section
+              class="modal fade"
+              id="recuperarModal"
+              tabindex="-1"
+              aria-labelledby="recuperarModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="recuperarModalLabel">
+                      Recuperar Contraseña
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Cerrar"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>Ingresa tu correo para recuperar tu contraseña.</h6>
+                    <form>
+                      <div class="mb-3">
+                        <label for="email" class="form-label"
+                          >Correo Electrónico</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Ingresa tu correo"
+                        />
+                      </div>
+                      <button type="submit" class="btn btn-warning">
+                        Enviar
+                      </button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-warning"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- LOGIN CON REDES SOCIALES -->
+            <section class="container w-100 my-5">
+              <div class="row text-center">
+                <div class="col-12 mb-2">Iniciar Sesión</div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-outline-primary w-100 my-1">
+                    <div class="row align-items-center">
+                      <div class="col-2 d-none d-md-block">
+                        <img src="../img/facebook logo.png" alt="" width="48" />
+                      </div>
+
+                      <div class="col-12 col-md-10 text-center">Facebook</div>
+                    </div>
+                  </button>
+                </div>
+
+                <div class="col">
+                  <button class="btn btn-outline-danger w-100 my-1">
+                    <div class="row align-items-center">
+                      <div class="col-2 d-none d-md-block">
+                        <img src="../img/google logo.png" alt="" width="30" />
+                      </div>
+
+                      <div class="col-12 col-md-10 text-center">Google</div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </sec>
+          </div>
+          <div
+            class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"
+          ></div>
+        </div>
+      </section>
+    </main>
+   <footer
+      class="container-fluid justify-content-between bg-secondary header-navbar mt-5"
+    >
+      <section class="justify-content-between row">
+        <div class="col-md-6 col-lg-4">
+          <a class="navbar-brand imagen-logo my-4" href="../index.html">
+            <img src="../img/logo cortado.webp" alt="Logo"
+          /></a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 mt-4 col-lg-4">
+          <h1 class="text-warning">Redes Sociales</h1>
+          <article class="text-center justify-content-center">
+            <ul
+              class="d-flex justify-content-center align-items-center list-unstyled"
+            >
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-warning d-flex justify-content-center align-items-center"
+                  aria-current="page"
+                  ><i class="bi bi-facebook fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-warning d-flex justify-content-center align-items-center"
+                  aria-current="page"
+                  ><i class="bi bi-whatsapp fs-5"></i
+                ></a>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+          <h1 class="text-warning">Terminos y condiciones legales</h1>
+          <ul class="navbar-nav text-center"></ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>

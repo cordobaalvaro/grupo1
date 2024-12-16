@@ -1,3 +1,42 @@
+/* formulario de contacto */
+.sin-resize {
+  resize: none;
+}
+
+.color-fondo {
+  background-color: lightgray;
+}
+.color-casilla {
+  background-color: white;
+}
+
+.toda-la-pantalla {
+  height: 100vh;
+}
+
+.espacio-mg {
+  margin: 50px 30px;
+}
+.efecto-casilla {
+  filter: drop-shadow(16px 16px 16px rgb(110, 110, 110));
+}
+
+.color-ventana {
+  background-color: rgb(253, 193, 7);
+}
+
+.espacio-ventana {
+  padding-top: 50px;
+}
+
+/* iconos de pagina de contacto*/
+.color-iconos {
+  color: white;
+}
+
+.espacio-iconos {
+  margin-top: 300px;
+}
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {

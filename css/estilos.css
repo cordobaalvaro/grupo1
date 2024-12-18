@@ -53,11 +53,7 @@
 }
 
 body {
-  background-color: lightgrey;
-}
-
-body {
-  background-color: lightgray;
+  background: white;
   font-family: roboto;
 }
 
@@ -88,7 +84,7 @@ body {
 }
 
 .taminio-cards {
-  width: 18rem;
+  width: 14rem;
   margin: 10px;
 }
 

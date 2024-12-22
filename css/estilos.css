@@ -4,7 +4,7 @@
 }
 
 .color-fondo {
-  background-color: lightgray;
+  background-color: rgba(240, 240, 240, 0.952);
 }
 .color-casilla {
   background-color: white;
@@ -28,7 +28,9 @@
 .espacio-ventana {
   padding-top: 50px;
 }
-
+.espacio-body {
+  margin-top: 110px;
+}
 /* iconos de pagina de contacto*/
 .color-iconos {
   color: white;
@@ -55,19 +57,10 @@
   background-size: cover; */
 }
 
-body {
-  background: white;
-  font-family: roboto;
-}
-
 /* carousel */
 .carousel-item img {
-  height: 400px;
+  height: 100vh;
   object-fit: cover;
-}
-.card {
-  border: 1px solid gray;
-  margin: 0px;
 }
 
 .card-img-top {
@@ -86,37 +79,24 @@ body {
   text-decoration: none;
 }
 
-.taminio-cards {
-  width: 14rem;
-  margin: 10px;
-}
-
-.list-group-item:hover {
-  background-color: rgb(183, 183, 233);
-}
-.bi {
-  border-radius: 100%;
-}
-@media (max-width: 500px) {
-  .card-propaganda {
-    display: none;
-  }
-}
 /* CSS de Grecia */
 .tamanio-moneda {
   width: 25rem;
 }
 .imagen-logo img {
-  width: 100px;
+  width: 70px;
 }
 
 .campana {
   font-size: 25px;
 }
 footer {
-  bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.navbar_alto {
+  height: 100px;
 }
 
 /* Sobre nosotros */
@@ -128,4 +108,13 @@ footer {
 
 .color-sobre-nosotros {
   background-color: rgb(247, 217, 154);
+}
+
+@media (max-width: 990px) {
+  .card-propaganda {
+    display: none;
+  }
+  .navbar_alto {
+    height: auto;
+  }
 }

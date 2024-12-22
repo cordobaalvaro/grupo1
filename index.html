@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Principall</title>
+    <meta name="author" content="grupo1" />
+    <meta
+      name="keywords"
+      content="moneda, numismatica, coleccion, dinero, variedad, antiguo"
+    />
+    <meta
+      name="description"
+      content="En esta pagina encontraras informacion sobre la numismatica global"
+    />
+    <title>Pagina Principal</title>
     <!-- Link de bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -18,14 +27,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!-- link de css -->
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
     <header>
       <!-- Inicio navbar -->
-      <nav class="navbar navbar-expand-lg bg-secondary header-navbar">
+      <nav
+        class="navbar navbar-expand-lg bg-white header-navbar letra navbar_alto fixed-top border-bottom border-black"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand imagen-logo my-4" href="./index.html">
+          <a class="navbar-brand imagen-logo" href="./index.html">
             <img src="./img/logo cortado.webp" alt="Logo"
           /></a>
           <button
@@ -39,39 +51,42 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+          <div
+            class="collapse navbar-collapse align-items-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 menu align-items-center">
               <li class="nav-item">
                 <a
-                  class="nav-link my-5 bg-warning fw-bold text-black"
+                  class="nav-link text-black"
                   href="./paginas/sobre-nosotros.html"
                   >Sobre Nosotros</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link mx-3 my-5 bg-warning fw-bold text-black"
+                  class="nav-link mx-3 my-5 text-black"
                   href="./paginas/contacto.html"
                   >Contacto</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link my-5 bg-warning fw-bold text-black"
+                  class="nav-link text-black"
                   href="./paginas/iniciar-sesion.html"
                   >Iniciar Sesión</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link mx-3 my-5 bg-danger text-white fw-bold"
+                  class="nav-link mx-3 my-5 bg-warning text-white fw-bold rounded-4"
                   href="./paginas/suscribete.html"
                   >Suscribete</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link my-5 campana text-warning fs-2"
+                  class="nav-link campana text-warning fs-2"
                   href="./paginas/suscribete.html"
                   ><i class="bi bi-currency-exchange"></i
                 ></a>
@@ -111,7 +126,7 @@
           <!-- Imagen 1 -->
           <div class="carousel-item active">
             <img
-              src="img/imagen4.webp"
+              src="./img/img-carousel1.jpg"
               class="d-block w-100"
               alt="Imagen moneda"
             />
@@ -119,7 +134,7 @@
           <!-- Imagen 2 -->
           <div class="carousel-item">
             <img
-              src="img/Imagen1.webp"
+              src="./img/Imagen1.webp"
               class="d-block w-100"
               alt="Imagen moneda"
             />
@@ -127,7 +142,7 @@
           <!-- Imagen 3 -->
           <div class="carousel-item">
             <img
-              src="img/imagen7.webp"
+              src="./img/img-carousel.jpeg"
               class="d-block w-100"
               alt="Imagen moneda"
             />
@@ -154,63 +169,62 @@
       </div>
       <!-- Fin de carousel -->
 
-      <section class="container-fluid">
+      <section class="container-fluid letra color-fondo">
         <div class="row">
           <!-- Primera columna -->
-          <div class="col-12 col-sm-3">
+          <div class="col-12 col-lg-3">
             <!-- buscador -->
             <div class="navbar">
-              <div class="container-fluid p-3">
+              <div class="container-fluid mt-5 ms-3 justify-content-center">
                 <form class="d-flex" role="search">
                   <input
-                    class="form-control me-2"
+                    class="form-control me-2 rounded-4"
                     type="search"
                     placeholder="Busqueda"
                     aria-label="Search"
                   />
-                  <button class="btn btn-outline-secondary" type="submit">
+                  <button
+                    class="btn btn-warning rounded-4 text-white fw-bold"
+                    type="submit"
+                  >
                     Buscar
                   </button>
                 </form>
               </div>
             </div>
             <!-- Categorias -->
-            <h3 class="text-body-secondary">Categorias</h3>
-            <ul class="lista-categorias p-2">
-              <li>
-                <a class="text-body-secondary" href="./paginas/nacionales.html"
-                  >Nacionales</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-body-secondary"
-                  href="./paginas/internacionales.html"
-                  >Internacionales</a
-                >
-              </li>
-              <li>
-                <a class="text-body-secondary" href="">Nuestra Coleccion</a>
-              </li>
-            </ul>
+            <div>
+              <a href="" class="text-black ms-4 mt-3 nav-link">CATEGORÍAS</a>
+              <ul class="lista-categorias mt-2">
+                <li>
+                  <a class="text-black" href="./paginas/nacionales.html"
+                    >Nacionales</a
+                  >
+                </li>
+                <li>
+                  <a class="text-black" href="./paginas/internacionales.html"
+                    >Internacionales</a
+                  >
+                </li>
+                <li>
+                  <a class="text-black" href="">Nuestra Coleccion</a>
+                </li>
+              </ul>
+            </div>
+
             <!-- Aside -->
             <!-- TODO: completar el href de propaganda al 404 -->
             <a class="link-propaganda" href="./paginas/404.html">
               <aside class="propaganda">
-                <div class="card-propaganda w-75 p-3">
-                  <img
-                    src="./img/logo-blanco -propaganda.png"
-                    class="card-img-top bg-success"
-                    alt="logo propaganda"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title text-body-secondary">CONOCENOS</h5>
-                    <p class="card-text text-body-secondary">
-                      Este blog se centra en la metodología del coleccionismo
-                      numismático y busca una visión holística al respecto.
-                    </p>
+                <div class="card-propaganda w-auto">
+                  <div class="card-body mt-5">
                     <p class="card-text">
-                      <small class="text-body-secondary">Publicidad</small>
+                      <small class="text-black">Publicidad</small>
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJwTOObn93qnmDmZOIAuYwdGVTsvMbHiOXg&s"
+                        class="card-img-top"
+                        alt="logo propaganda"
+                      />
                     </p>
                   </div>
                 </div>
@@ -218,36 +232,36 @@
             </a>
           </div>
           <!-- Segunda columna -->
-          <div class="col-12 col-sm-9 d-flex flex-column">
-            <h3 class="text-center mt-5 text-body-secondary w-100">
-              Nuevos ingresos
-            </h3>
+          <div class="col-12 col-lg-9 d-flex flex-column">
+            <h4 class="text-center mt-5 mb-4 text-black">NUEVOS INGRESOS</h4>
             <div class="container text-center">
-              <div class="row">
+              <div class="row justify-content-center">
                 <div
-                  class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1"
+                  class="card col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/MEDIOCENT-SF.png"
+                    src="./img/ARMENIA.jpeg"
                     class="card-img-top"
-                    alt="imagen de moneda de medio centavo de argentina 1985"
+                    alt="imagen de moneda de tailandia de 10 bath"
                   />
                   <div class="card-body">
-                    <h5 class="card-title text-body-secondary">ARGENTINA</h5>
+                    <h5 class="card-title text-body-secondary">ARMENIA</h5>
                     <p class="card-text h-5 text-truncate">
-                      1/2 Centavo 1985. Moneda de Circulacion. Bronce de
-                      Aluminio. 19.7 mm.
+                      20 Dram de 2023. Conmemorativa por los 30 años de la
+                      Moneda Nacional. Acero bañado en cobre. 20.5 mm.
                     </p>
-                    <a href="./paginas/nacionales.html" class="btn btn-warning"
+                    <a
+                      href="./paginas/internacionales.html"
+                      class="btn btn-warning rounded-4 text-white fw-bold"
                       >Ver más</a
                     >
                   </div>
                 </div>
                 <div
-                  class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1"
+                  class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/GRECIA-SF.png"
+                    src="./img/GRECIA.jpeg"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -259,16 +273,16 @@
                     </p>
                     <a
                       href="./paginas/internacionales.html"
-                      class="btn btn-warning"
+                      class="btn btn-warning rounded-4 text-white fw-bold"
                       >Ver más</a
                     >
                   </div>
                 </div>
                 <div
-                  class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1"
+                  class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/PAKISTAN-SF.png"
+                    src="./img/PAKISTA.jpeg"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -279,16 +293,16 @@
                     </p>
                     <a
                       href="./paginas/internacionales.html"
-                      class="btn btn-warning"
+                      class="btn btn-warning rounded-4 text-white fw-bold"
                       >Ver más</a
                     >
                   </div>
                 </div>
                 <div
-                  class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1"
+                  class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 mb-lg-0 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/PANAMA-SF.png"
+                    src="./img/PANAMA.jpeg"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -300,16 +314,16 @@
                     </p>
                     <a
                       href="./paginas/internacionales.html"
-                      class="btn btn-warning"
+                      class="btn btn-warning rounded-4 text-white fw-bold"
                       >Ver más</a
                     >
                   </div>
                 </div>
                 <div
-                  class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1"
+                  class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 mb-lg-0 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/TAILANDIA-SF.png"
+                    src="./img/TAILANDIA.jpeg"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -321,16 +335,16 @@
                     </p>
                     <a
                       href="./paginas/internacionales.html"
-                      class="btn btn-warning"
+                      class="btn btn-warning rounded-4 text-white fw-bold"
                       >Ver más</a
                     >
                   </div>
                 </div>
                 <div
-                  class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1"
+                  class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 mb-lg-0 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/UGANDA-SF.png"
+                    src="./img/UGANDA.jpeg"
                     class="card-img-top"
                     alt="imagen de alimento de cordero y arroz para perros grandes"
                   />
@@ -342,82 +356,118 @@
                     </p>
                     <a
                       href="./paginas/internacionales.html"
-                      class="btn btn-warning"
+                      class="btn btn-warning rounded-4 text-white fw-bold"
                       >Ver más</a
                     >
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Paginación -->
+            <section class="d-flex justify-content-center letra mt-4">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a
+                      class="page-link text-black"
+                      href="./paginas/404.html"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-black" href="./paginas/404.html"
+                      >1</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-black" href="./paginas/404.html"
+                      >2</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-black" href="./paginas/404.html"
+                      >3</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a
+                      class="page-link text-black"
+                      href="./paginas/404.html"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
           </div>
         </div>
       </section>
-      <!-- Paginación -->
-      <section class="d-flex justify-content-center">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="./paginas/404.html">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="./paginas/404.html">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="./paginas/404.html">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
     </main>
     <!-- Inicio de footer -->
-
-    <footer
-      class="container-fluid justify-content-between bg-secondary header-navbar mt-5"
-    >
-      <section class="justify-content-between row">
-        <div class="col-md-6 col-lg-4">
-          <a class="navbar-brand imagen-logo my-4" href="./index.html">
+    <footer class="container-fluid bg-white header-navbar letra">
+      <section class="row">
+        <div class="col-12 col-md-4 mt-2">
+          <a class="navbar-brand imagen-logo" href="./index.html">
             <img src="./img/logo cortado.webp" alt="Logo"
           /></a>
         </div>
 
-        <div class="col-sm-12 col-md-6 mt-4 col-lg-4">
-          <h1 class="text-warning">Redes Sociales</h1>
-          <article class="text-center justify-content-center">
+        <div class="col-12 col-md-4 mt-4">
+          <a href="./paginas/404.html" class="nav-link text-black"
+            >Redes Sociales</a
+          >
+          <article class="text-center">
             <ul
               class="d-flex justify-content-center align-items-center list-unstyled"
             >
               <li class="nav-item mx-2">
                 <a
-                  class="nav-link text-warning d-flex justify-content-center align-items-center"
+                  class="nav-link text-warning"
+                  href="https://www.faceebook.com/oregoom"
+                  target="_blank"
                   aria-current="page"
                   ><i class="bi bi-facebook fs-5"></i
                 ></a>
               </li>
               <li class="nav-item mx-2">
                 <a
-                  class="nav-link text-warning d-flex justify-content-center align-items-center"
+                  class="nav-link text-warning"
+                  href="https://www.WhatsApp.com/oregoom"
+                  target="_blank"
                   aria-current="page"
                   ><i class="bi bi-whatsapp fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-warning"
+                  href="https://www.instagram.com/oregoom"
+                  target="_blank"
+                  aria-current="page"
+                  ><i class="bi bi-instagram fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-warning"
+                  href="https://www.twitter.com/oregoom"
+                  target="_blank"
+                  aria-current="page"
+                  ><i class="bi bi-twitter fs-5"></i
                 ></a>
               </li>
             </ul>
           </article>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
-          <h1 class="text-warning">Terminos y condiciones legales</h1>
-          <ul class="navbar-nav text-center"></ul>
+        <div class="col-12 col-md-4 mt-4">
+          <a href="./paginas/404.html" class="nav-link text-black"
+            >Terminos y condiciones</a
+          >
         </div>
       </section>
     </footer>

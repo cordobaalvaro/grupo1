@@ -106,10 +106,6 @@ footer {
   object-fit: cover;
 }
 
-.color-sobre-nosotros {
-  background-color: rgb(247, 217, 154);
-}
-
 @media (max-width: 990px) {
   .card-propaganda {
     display: none;

@@ -59,8 +59,7 @@
 
 /* carousel */
 .carousel-item img {
-  height: 100vh;
-  object-fit: cover;
+  height: 400px;
 }
 
 .card-img-top {
@@ -113,6 +112,9 @@ footer {
   .navbar_alto {
     height: auto;
   }
+  .carousel-item img {
+    height: 200px;
+  }
 }
 
 /* CSS GALERIA DE IMAGENES */
@@ -129,4 +131,8 @@ footer {
 
 .img1 img {
   width: 500px;
+}
+
+body {
+  padding-top: 90px;
 }

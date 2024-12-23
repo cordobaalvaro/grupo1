@@ -11,6 +11,10 @@
   font-family: "monserrat", sans-serif;
 }
 
+body {
+  padding-top: 100px;
+}
+
 /* formulario de contacto */
 .sin-resize {
   resize: none;
@@ -104,6 +108,26 @@ footer {
   object-fit: cover;
 }
 
+/* CSS GALERIA DE IMAGENES */
+.galeria img {
+  width: 100%;
+  height: 300px;
+
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
+}
+
+.img1 img {
+  width: 500px;
+}
+
+.navbarbg {
+  background-image: url(/img/nav1-9.gif);
+}
+
 /* @MEDIA */
 @media (max-width: 990px) {
   .card-propaganda {
@@ -124,28 +148,4 @@ footer {
   .carousel-item img {
     height: 200px;
   }
-}
-
-/* CSS GALERIA DE IMAGENES */
-.galeria img {
-  width: 100%;
-  height: 300px;
-
-  transition: transform 0.3s ease;
-}
-
-.galeria img:hover {
-  transform: scale(1.1);
-}
-
-.img1 img {
-  width: 500px;
-}
-
-body {
-  padding-top: 100px;
-}
-
-.navbarbg {
-  background-image: url(/img/nav1-9.gif);
 }

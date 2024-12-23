@@ -117,6 +117,12 @@ footer {
   }
 }
 
+@media (max-width: 450px) {
+  .categoriascss {
+    text-align: center;
+  }
+}
+
 /* CSS GALERIA DE IMAGENES */
 .galeria img {
   width: 100%;
@@ -135,4 +141,8 @@ footer {
 
 body {
   padding-top: 90px;
+}
+
+.navbarbg {
+  background-image: url(/img/nav1-9.gif);
 }

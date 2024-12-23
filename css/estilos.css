@@ -50,11 +50,10 @@
   box-sizing: border-box;
 }
 
+/* INICIAR SESION */
 .bg {
   background-image: url(../img/moneda\ bg.jpeg);
   background-position: center center;
-  /* background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 /* carousel */
@@ -105,12 +104,22 @@ footer {
   object-fit: cover;
 }
 
+/* @MEDIA */
 @media (max-width: 990px) {
   .card-propaganda {
     display: none;
   }
   .navbar_alto {
     height: auto;
+  }
+  .carousel-item img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .categoriascss {
+    text-align: center;
   }
   .carousel-item img {
     height: 200px;
@@ -146,4 +155,8 @@ footer {
 
 body {
   padding-top: 90px;
+}
+
+.navbarbg {
+  background-image: url(/img/nav1-9.gif);
 }

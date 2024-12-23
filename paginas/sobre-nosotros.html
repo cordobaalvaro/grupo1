@@ -34,11 +34,11 @@
     <header>
       <!-- Inicio navbar -->
       <nav
-        class="navbar navbar-expand-lg bg-white header-navbar letra navbar_alto fixed-top border-bottom border-black"
+        class="navbar navbar-expand-lg bg-white header-navbar letra navbar_alto border-bottom border-black fixed-top navbarbg"
       >
         <div class="container-fluid">
           <a class="navbar-brand imagen-logo" href="../index.html">
-            <img src="../img/logo cortado.webp" alt="Logo"
+            <img src="/img/logo navideño.png" alt="Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -80,14 +80,18 @@
               <li class="nav-item">
                 <a
                   class="nav-link mx-3 my-5 bg-warning text-white fw-bold rounded-4"
-                  href="../paginas/suscribete.html"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   >Suscribete</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link campana text-warning fs-2"
-                  href="./paginas/suscribete.html"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   ><i class="bi bi-currency-exchange"></i
                 ></a>
               </li>
@@ -95,6 +99,71 @@
           </div>
         </div>
       </nav>
+      <!-- VENTANA MODAL DEL NAVBAR -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Suscribirse
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Suscribete en nuestra app</div>
+            <div class="container">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="ingrese su correo"
+              />
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="ingrese su nombre"
+              />
+              <label for="nombre" class="form-label">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="ingrese su apellido"
+              />
+              <div class="mb-4 mt-3 form-check">
+                <input
+                  type="checkbox"
+                  name="connected"
+                  class="form-check-input"
+                />
+                <label for="connected" class="form-check-label"
+                  >Recibir Notificaciones por Email</label
+                >
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-warning">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Fin de navbar -->
     </header>
 

@@ -38,7 +38,7 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand imagen-logo" href="./index.html">
-            <img src="./img/logo cortado.webp" alt="Logo"
+            <img src="./img/logo navideño.png" alt="Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -80,14 +80,18 @@
               <li class="nav-item">
                 <a
                   class="nav-link mx-3 my-5 bg-warning text-white fw-bold rounded-4"
-                  href="./paginas/suscribete.html"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   >Suscribete</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link campana text-warning fs-2"
-                  href="./paginas/suscribete.html"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   ><i class="bi bi-currency-exchange"></i
                 ></a>
               </li>
@@ -95,6 +99,72 @@
           </div>
         </div>
       </nav>
+      <!-- VENTANA MODAL DEL NAVBAR -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Suscribirse
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Suscribete en nuestra app</div>
+            <div class="container">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="ingrese su correo"
+              />
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="ingrese su nombre"
+              />
+              <label for="nombre" class="form-label">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="ingrese su apellido"
+              />
+              <div class="mb-4 mt-3 form-check">
+                <input
+                  type="checkbox"
+                  name="connected"
+                  class="form-check-input"
+                />
+                <label for="connected" class="form-check-label"
+                  >Recibir Notificaciones por Email</label
+                >
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-warning">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Fin de navbar -->
     </header>
     <main>
@@ -126,7 +196,7 @@
           <!-- Imagen 1 -->
           <div class="carousel-item active">
             <img
-              src="img/Proyecto nuevo (1).png"
+              src="img/navidad.gif"
               class="d-block w-100"
               alt="Imagen navidad"
             />
@@ -142,7 +212,7 @@
           <!-- Imagen 3 -->
           <div class="carousel-item">
             <img
-              src="img/img-carousel.jpeg"
+              src="img/monedas de todas las edades.gif"
               class="d-block w-100"
               alt="Imagen moneda"
             />
@@ -175,7 +245,7 @@
           <div class="col-12 col-lg-3">
             <!-- buscador -->
             <div class="navbar">
-              <div class="container-fluid mt-5 ms-3 justify-content-center">
+              <div class="container-fluid mt-5 ms-3">
                 <form class="d-flex" role="search">
                   <input
                     class="form-control me-2 rounded-4"
@@ -193,7 +263,7 @@
               </div>
             </div>
             <!-- Categorias -->
-            <div>
+            <div class="categoriascss">
               <a href="" class="text-black ms-4 mt-3 nav-link">CATEGORÍAS</a>
               <ul class="lista-categorias mt-2">
                 <li>
@@ -244,18 +314,18 @@
                   class="card col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/ARMENIA.jpeg"
+                    src="./img/MEDIOCENT-SF.png"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
                   <div class="card-body">
-                    <h5 class="card-title text-body-secondary">ARMENIA</h5>
+                    <h5 class="card-title text-body-secondary">ARGENTINA</h5>
                     <p class="card-text h-5 text-truncate">
-                      20 Dram de 2023. Conmemorativa por los 30 años de la
-                      Moneda Nacional. Acero bañado en cobre. 20.5 mm.
+                      1/2 Centavo de 1985. Moneda de Circulación. Latón. 19.7
+                      mm.
                     </p>
                     <a
-                      href="./paginas/internacionales.html"
+                      href="./paginas/nacionales.html"
                       class="btn btn-warning rounded-4 text-white fw-bold"
                       >Ver más</a
                     >
@@ -265,7 +335,7 @@
                   class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/GRECIA.jpeg"
+                    src="./img/GRECIA-SF.png"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -286,7 +356,7 @@
                   class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/PAKISTA.jpeg"
+                    src="./img/PAKISTAN-SF.png"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -306,7 +376,7 @@
                   class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 mb-lg-0 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/PANAMA.jpeg"
+                    src="./img/PANAMA-SF.png"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -327,7 +397,7 @@
                   class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 mb-lg-0 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/TAILANDIA.jpeg"
+                    src="./img/TAILANDIA-SF.png"
                     class="card-img-top"
                     alt="imagen de moneda de tailandia de 10 bath"
                   />
@@ -348,7 +418,7 @@
                   class="card tamanio-cards col-sm-12 col-md-5 col-lg-3 p-2 me-4 mb-4 mb-lg-0 border-0 efecto-casilla"
                 >
                   <img
-                    src="./img/UGANDA.jpeg"
+                    src="./img/UGANDA-SF.png"
                     class="card-img-top"
                     alt="imagen de alimento de cordero y arroz para perros grandes"
                   />

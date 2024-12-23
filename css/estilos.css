@@ -116,6 +116,11 @@ footer {
     height: 200px;
   }
 }
+@media (max-width: 750px) {
+  .card {
+    margin-left: 20px;
+  }
+}
 
 /* CSS GALERIA DE IMAGENES */
 .galeria img {

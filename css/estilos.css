@@ -149,3 +149,9 @@ footer {
     height: 200px;
   }
 }
+
+@media (max-width: 750px) {
+  .comentarios {
+    flex-grow: 1;
+  }
+}

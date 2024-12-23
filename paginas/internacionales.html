@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html lang="es_Ar">
+<html lang="Es_AR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="grupo1" />
+    <meta
+      name="keywords"
+      content="moneda, numismatica, coleccion, dinero, variedad, antiguo"
+    />
+    <meta
+      name="description"
+      content="En esta pagina encontraras informacion sobre la numismatica global"
+    />
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,18 +20,25 @@
       crossorigin="anonymous"
     />
     <!-- ICONO BOOTSTRAP -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>Internacionales</title>
   </head>
-  <body>
-        <header>
+
+  <body class="color-fondo letra">
+    <header>
       <!-- Inicio navbar -->
-      <nav class="navbar navbar-expand-lg bg-secondary header-navbar">
+
+      <nav
+        class="navbar navbar-expand-lg bg-white header-navbar letra navbar_alto border-bottom border-black fixed-top navbarbg"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand imagen-logo my-4" href="../index.html">
-            <img src="../img/logo cortado.webp" alt="Logo"
+          <a class="navbar-brand imagen-logo" href="../index.html">
+            <img src="../img/logo navideño.png" alt="Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -35,40 +51,45 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+          <div
+            class="collapse navbar-collapse align-items-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 menu align-items-center">
               <li class="nav-item">
                 <a
-                  class="nav-link my-5 bg-warning text-black fw-bold"
+                  class="nav-link text-black"
                   href="../paginas/sobre-nosotros.html"
                   >Sobre Nosotros</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link mx-3 my-5 bg-warning text-black fw-bold"
-                  href="../paginas/contacto.html"
+                  class="nav-link mx-3 my-5 text-black"
+                  href="./paginas/contacto.html"
                   >Contacto</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link my-5 bg-warning text-black fw-bold"
+                  class="nav-link text-black"
                   href="../paginas/iniciar-sesion.html"
                   >Iniciar Sesión</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link mx-3 my-5 bg-danger fw-bold"
-                  href="../paginas/suscribete.html"
+                  class="nav-link mx-3 my-5 bg-warning text-white fw-bold rounded-4"
+                  href="./paginas/suscribete.html"
                   >Suscribete</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link my-5 campana text-warning fs-2"
-                  href="../paginas/suscribete.html"
+                  class="nav-link campana text-warning fs-2"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                   ><i class="bi bi-currency-exchange"></i
                 ></a>
               </li>
@@ -76,240 +97,369 @@
           </div>
         </div>
       </nav>
-    <section class="container">
-      <div class="row justify-content-center">
-        <h3 class="text-center mt-5 text-body-secondary">Internacionales</h3>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/ARMENIA-SF.png"
-            class="card-img-top"
-            alt="moneda de 20 dram de armenia"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">ARMENIA</h5>
-            <p class="card-text h-5 text-truncate">
-              20 Dram de 2023. Conmemorativa por los 30 años de la Moneda
-              Nacional. Acero bañado en cobre. 20.5 mm.
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/GRECIA-SF.png"
-            class="card-img-top"
-            alt="moneda de 10 dracmas de Grecia de 1973"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">GRECIA</h5>
-            <p class="card-text h-5 text-truncate">
-              10 Dracmas de 1973. Moneda de circulación. Cuproníquel. 26 mm
-            </p>
-            <a href="./grecia.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/PAKISTAN-SF.png"
-            class="card-img-top"
-            alt="moneda de una rupia de 1999 de pakistan"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">PAKISTÁN</h5>
-            <p class="card-text h-5 text-truncate">
-              Una rupia de 1990. Moneda de circulación. Bronce. 20 mm
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/PANAMA-SF.png"
-            class="card-img-top"
-            alt="moneda de panama de un balboa de 2011"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">PANAMÁ</h5>
-            <p class="card-text h-5 text-truncate">
-              Un Balboa de 2011. Moneda de circulación. Bimetálica. 26.5 mm
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/TAILANDIA-SF.png"
-            class="card-img-top"
-            alt="imagen de moneda de tailandia de 10 bath"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">TAILANDIA</h5>
-            <p class="card-text h-5 text-truncate">
-              10 bath 2002. Conmemorativa 75° Aniversario del Nacimiento de Rama
-              IX. Bimetálica. 26mm.
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/UGANDA-SF.png"
-            class="card-img-top"
-            alt="moneda de 1000 chelines de Uganda"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">UGANDA</h5>
-            <p class="card-text h-5 text-truncate">
-              1000 Chelines de 2012. Conmemorativa 50° Aniversario de la
-              Independecia. Bimetalica. 27mm.
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/ARABIASAUDITA-SF.png"
-            class="card-img-top"
-            alt="moneda de arabia saudita de 100 halalas"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">ARABIA SAUDITA</h5>
-            <p class="card-text h-5 text-truncate">
-              100 Halalas de 2008. Moneda de circulación. Bimetalica. 23mm.
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/AUSTRIA-SF.png"
-            class="card-img-top"
-            alt="moneda de austria de 2 groschen de 1926"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">AUSTRIA</h5>
-            <p class="card-text h-5 text-truncate">
-              2 Groschen. Moneda de circulación. Bronce. 19mm.
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <div class="card tamanio-cards col-sm-12 col-md-6 col-lg-4 p-2 my-1">
-          <img
-            src="../img/MONACO-SF.png"
-            class="card-img-top"
-            alt="moneda de monaco de 20 centimes de 1962"
-          />
-          <div class="card-body">
-            <h5 class="card-title text-body-secondary">MÓNACO</h5>
-            <p class="card-text h-5 text-truncate">
-              20 Centimes de 1962. Moneda de circulación. Cobre-Aluminio-Níquel.
-              23.5mm.
-            </p>
-            <a href="../paginas/404.html" class="btn btn-warning">Ver más</a>
-          </div>
-        </div>
-        <!-- comentarios fijados -->
-        <div class="container mt-5 w-50 py-5">
-          <h2 class="text-body-secondary">Deja tu comentario</h2>
-          <!-- Formulario de comentarios -->
-          <form id="commentForm">
-            <div class="mb-3">
+      <!-- VENTANA MODAL DEL NAVBAR -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Suscribirse
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Suscribete en nuestra app</div>
+            <div class="container">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="ingrese su correo"
+              />
               <label for="nombre" class="form-label">Nombre</label>
               <input
                 type="text"
                 class="form-control"
-                id="nombre"
-                placeholder="Tu nombre"
-                required
+                placeholder="ingrese su nombre"
               />
-            </div>
-            <div class="mb-3">
-              <label for="comentario" class="form-label">Comentario</label>
-              <textarea
+              <label for="nombre" class="form-label">Apellido</label>
+              <input
+                type="text"
                 class="form-control"
-                id="comentario"
-                rows="3"
-                placeholder="Escribe tu comentario aquí"
-                required
-              ></textarea>
+                placeholder="ingrese su apellido"
+              />
+              <div class="mb-4 mt-3 form-check">
+                <input
+                  type="checkbox"
+                  name="connected"
+                  class="form-check-input"
+                />
+                <label for="connected" class="form-check-label"
+                  >Recibir Notificaciones por Email</label
+                >
+              </div>
             </div>
-            <button type="submit" class="btn btn-warning">Enviar</button>
-          </form>
-
-          <h3 class="mt-5 text-body-secondary">Comentarios</h3>
-          <!-- Lista de comentarios -->
-          <ul id="commentList" class="list-group">
-            <!-- Comentarios preescritos -->
-            <li class="list-group-item">
-              <i class="bi bi-person-standing bg-warning"></i>
-              <strong>Lucas Marcelo Toledo:</strong> ¡Gran post! Muy
-              informativo.
-            </li>
-            <li class="list-group-item">
-              <i class="bi bi-person-standing-dress bg-warning"></i>
-              <strong>Estefanía Pellegrini:</strong> Me encantó la manera en que
-              explicaste los detalles.
-            </li>
-            <li class="list-group-item">
-              <i class="bi bi-person-standing bg-warning"></i>
-              <strong>Álvaro Maximiliano Córdoba:</strong> Muy lindas monedas,
-              muy buen trabajo.
-            </li>
-            <li class="list-group-item">
-              <i class="bi bi-person-standing bg-warning"></i>
-              <strong>Rodrigo Casagrande:</strong> El mejor blog de Rolling
-            </li>
-            <li class="list-group-item">
-              <i class="bi bi-person-standing bg-warning"></i>
-              <strong>Diangel Muñoz:</strong> Información muy útil, gracias por
-              compartirla.
-            </li>
-          </ul>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-warning">Enviar</button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <!-- Fin de navbar -->
+    </header>
+    <main>
+      <section class="container">
+        <div class="row justify-content-center">
+          <h3 class="text-center mt-5 text-black">Internacionales</h3>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/ARMENIA-SF.png"
+              class="card-img-top"
+              alt="moneda de 20 dram de armenia"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">ARMENIA</h5>
+              <p class="card-text h-5 text-truncate">
+                20 Dram de 2023. Conmemorativa por los 30 años de la Moneda
+                Nacional. Acero bañado en cobre. 20.5 mm.
+              </p>
+              <a
+                href="../paginas/404.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/GRECIA-SF.png"
+              class="card-img-top"
+              alt="moneda de 10 dracmas de Grecia de 1973"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">GRECIA</h5>
+              <p class="card-text h-5 text-truncate">
+                10 Dracmas de 1973. Moneda de circulación. Cuproníquel. 26 mm
+              </p>
+              <a
+                href="./grecia.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/PAKISTAN-SF.png"
+              class="card-img-top"
+              alt="moneda de una rupia de 1999 de pakistan"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">PAKISTÁN</h5>
+              <p class="card-text h-5 text-truncate">
+                Una rupia de 1990. Moneda de circulación. Bronce. 20 mm
+              </p>
+              <a
+                href="../paginas/404.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/PANAMA-SF.png"
+              class="card-img-top"
+              alt="moneda de panama de un balboa de 2011"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">PANAMÁ</h5>
+              <p class="card-text h-5 text-truncate">
+                Un Balboa de 2011. Moneda de circulación. Bimetálica. 26.5 mm
+              </p>
+              <a
+                href="../paginas/404.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/TAILANDIA-SF.png"
+              class="card-img-top"
+              alt="imagen de moneda de tailandia de 10 bath"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">TAILANDIA</h5>
+              <p class="card-text h-5 text-truncate">
+                10 bath 2002. Conmemorativa 75° Aniversario del Nacimiento de
+                Rama IX. Bimetálica. 26mm.
+              </p>
+              <a
+                href="../paginas/404.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/UGANDA-SF.png"
+              class="card-img-top"
+              alt="moneda de 1000 chelines de Uganda"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">UGANDA</h5>
+              <p class="card-text h-5 text-truncate">
+                1000 Chelines de 2012. Conmemorativa 50° Aniversario de la
+                Independecia. Bimetalica. 27mm.
+              </p>
+              <a
+                href="../paginas/404.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/ARABIASAUDITA-SF.png"
+              class="card-img-top"
+              alt="moneda de arabia saudita de 100 halalas"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">ARABIA SAUDITA</h5>
+              <p class="card-text h-5 text-truncate">
+                100 Halalas de 2008. Moneda de circulación. Bimetalica. 23mm.
+              </p>
+              <a
+                href="../paginas/404.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
+          <div
+            class="card col-sm-12 col-md-5 col-lg-3 p-2 me-0 me-md-4 mb-4 border-0 efecto-casilla"
+          >
+            <img
+              src="../img/AUSTRIA-SF.png"
+              class="card-img-top"
+              alt="moneda de austria de 2 groschen de 1926"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-body-secondary">AUSTRIA</h5>
+              <p class="card-text h-5 text-truncate">
+                2 Groschen. Moneda de circulación. Bronce. 19mm.
+              </p>
+              <a
+                href="../paginas/404.html"
+                class="btn btn-warning rounded-4 text-white fw-bold"
+                >Ver más</a
+              >
+            </div>
+          </div>
 
-    <footer
-      class="container-fluid justify-content-between bg-secondary header-navbar mt-5"
-    >
-      <section class="justify-content-between row">
-        <div class="col-md-6 col-lg-4">
-          <a class="navbar-brand imagen-logo my-4" href="../index.html">
+          <!-- comentarios fijados -->
+          <div class="container my-3 w-50 comentarios">
+            <h2 class="text-black">Deja tu comentario</h2>
+            <!-- Formulario de comentarios -->
+            <form id="commentForm">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="comentario" class="form-label">Comentario</label>
+                <textarea
+                  class="form-control"
+                  id="comentario"
+                  rows="3"
+                  placeholder="Escribe tu comentario aquí"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning">Enviar</button>
+            </form>
+
+            <h3 class="mt-5 text-black">Comentarios</h3>
+            <!-- Lista de comentarios -->
+            <ul id="commentList" class="list-group">
+              <!-- Comentarios preescritos -->
+              <li class="list-group-item">
+                <i class="bi bi-person-standing bg-warning"></i>
+                <strong>Lucas Marcelo Toledo:</strong> ¡Gran post! Muy
+                informativo.
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-person-standing-dress bg-warning"></i>
+                <strong>Estefanía Pellegrini:</strong> Me encantó la manera en
+                que explicaste los detalles.
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-person-standing bg-warning"></i>
+                <strong>Álvaro Maximiliano Córdoba:</strong> Muy lindas monedas,
+                muy buen trabajo.
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-person-standing bg-warning"></i>
+                <strong>Rodrigo Casagrande:</strong> El mejor blog de Rolling
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-person-standing bg-warning"></i>
+                <strong>Diangel Muñoz:</strong> Información muy útil, gracias
+                por compartirla.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- fin de main -->
+    <!-- Inicio de footer -->
+
+    <footer class="container-fluid bg-white header-navbar letra">
+      <section class="row">
+        <div class="col-12 col-md-4 mt-2">
+          <a class="navbar-brand imagen-logo" href="../index.html">
             <img src="../img/logo cortado.webp" alt="Logo"
           /></a>
         </div>
 
-        <div class="col-sm-12 col-md-6 mt-4 col-lg-4">
-          <h1 class="text-warning">Redes Sociales</h1>
-          <article class="text-center justify-content-center">
+        <div class="col-12 col-md-4 mt-4">
+          <a href="../paginas/404.html" class="nav-link text-black"
+            >Redes Sociales</a
+          >
+          <article class="text-center">
             <ul
               class="d-flex justify-content-center align-items-center list-unstyled"
             >
               <li class="nav-item mx-2">
                 <a
-                  class="nav-link text-warning d-flex justify-content-center align-items-center"
+                  class="nav-link text-warning"
+                  href="https://www.faceebook.com/oregoom"
+                  target="_blank"
                   aria-current="page"
                   ><i class="bi bi-facebook fs-5"></i
                 ></a>
               </li>
               <li class="nav-item mx-2">
                 <a
-                  class="nav-link text-warning d-flex justify-content-center align-items-center"
+                  class="nav-link text-warning"
+                  href="https://www.WhatsApp.com/oregoom"
+                  target="_blank"
                   aria-current="page"
                   ><i class="bi bi-whatsapp fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-warning"
+                  href="https://www.instagram.com/oregoom"
+                  target="_blank"
+                  aria-current="page"
+                  ><i class="bi bi-instagram fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-warning"
+                  href="https://www.twitter.com/oregoom"
+                  target="_blank"
+                  aria-current="page"
+                  ><i class="bi bi-twitter fs-5"></i
                 ></a>
               </li>
             </ul>
           </article>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
-          <h1 class="text-warning">Terminos y condiciones legales</h1>
-          <ul class="navbar-nav text-center"></ul>
+        <div class="col-12 col-md-4 mt-4">
+          <a href="../paginas/404.html" class="nav-link text-black"
+            >Terminos y condiciones</a
+          >
         </div>
       </section>
     </footer>
+    <!-- Fin de footer -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
